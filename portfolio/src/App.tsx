@@ -4,7 +4,7 @@ import Hero from './Components/Sections/Hero/Hero';
 import About from './Components/Sections/About/About';
 import Footer from './Components/Footer/Footer';
 import Works from './Components/Sections/Works/Works';
-
+import { myWorks } from './Content/MyWorks';
 function App() {
   return (
     <div className="App 
@@ -27,7 +27,7 @@ function App() {
                     ">
       <Hero />
       <About />
-      <Works InfoList={[{}]} />
+      <Works InfoList={myWorks.InfoList} />
       <Footer />
     </div>
   );

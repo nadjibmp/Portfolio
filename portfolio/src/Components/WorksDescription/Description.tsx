@@ -1,26 +1,30 @@
 import React from 'react'
 import { DescriptionWrapper } from './Description.styled';
-const Description: React.FC = () => {
+import { WorkProps } from '../Sections/Works/Works';
+import { Direction } from '../../Utils/CommonTypes';
+
+const Description: React.FC<WorkProps> = ({ ProjectType, Title, Techs, description, Direction }) => {
   return (
-    <DescriptionWrapper>
+    <DescriptionWrapper direction={Direction}>
       <div className="type">
-        <h4>Featured Project</h4>
+        <h4>{ProjectType}</h4>
       </div>
       <div className="title">
-        <h3>Taskify App</h3>
+        <h3>{Title}</h3>
       </div>
       <div className="description">
         <p>
-          A minimal, dark blue theme for VS Code, Sublime Text, Atom,
-          iTerm, and more. Available on Visual Studio Marketplace, Package Control,
-          Atom Package Manager, and npm.
+          {
+            description
+          }
         </p>
       </div>
       <div className="techs">
         <ul className='flex flex-wrap  p-2'>
-          <li>React.js</li>
-          <li>TypeScript</li>
-          <li>Styled Components</li>
+          {
+            Techs.map(tech => {
+              return <li key={tech}> {tech}</li>
+            })}
         </ul>
       </div>
       <div className="links">

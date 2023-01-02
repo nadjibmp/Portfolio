@@ -26,8 +26,13 @@ export const WorksSection = styled.section`
         &:hover .overlay{
             opacity:0;
         }
+
         .overlay,img{
             border-radius:4px;
         }
+    }
+
+    .rtl{
+        direction:rtl;
     }
 `;

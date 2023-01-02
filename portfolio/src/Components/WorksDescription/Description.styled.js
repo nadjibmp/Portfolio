@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 import ColorPalette from '../../FontsAndColors/ColorPalette';
-
+import { Direction } from '../../Utils/CommonTypes'
 export const DescriptionWrapper = styled.div`
     position:absolute;
     width:450px;
-    right:50px;
+    right:${({ direction }) => direction === Direction.ltr ? '0px' : '-50px'};
     display:flex;
     flex-direction:column;
     justify-content:Center;
     align-items:flex-end;
-
+    text-align:${({ direction }) => direction === Direction.ltr ? 'right' : 'left'};
     .type{
         margin: 5px 0;
 
@@ -48,7 +48,7 @@ export const DescriptionWrapper = styled.div`
     .techs{
         max-width:100%;
         li{
-            margin-left:20px;
+            margin:${({ direction }) => direction === Direction.ltr ? '0 0 0 20px' : '0 20px 0 0'};
             font-size:0.8em;
             font-family:'poppins', sans-serif;
         }
