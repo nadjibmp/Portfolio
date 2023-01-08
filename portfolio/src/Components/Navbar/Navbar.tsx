@@ -20,7 +20,6 @@ const Navbar: React.FC<Props> = ({ links, logo }) => {
                     <LogoContainer className='logo__container'>
                         <a href="/"><img src={logo} alt="brand"></img></a>
                     </LogoContainer>
-
                     <div className='list__container'>
                         <ul className='link_lists flex'>
                             {
