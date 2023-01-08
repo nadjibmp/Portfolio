@@ -35,6 +35,7 @@ export const DescriptionWrapper = styled.div`
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;        
         p{
+            text-align:left;
             font-size:0.85em;
             line-height:1.8;
             font-family:'poppins', sans-serif;
@@ -48,7 +49,7 @@ export const DescriptionWrapper = styled.div`
     .techs{
         max-width:100%;
         li{
-            margin:${({ direction }) => direction === Direction.ltr ? '0 0 0 20px' : '0 20px 0 0'};
+            margin:${({ direction }) => direction === Direction.ltr ? '0 0 0 40px' : '0 20px 0 0'};
             font-size:0.8em;
             font-family:'poppins', sans-serif;
         }

@@ -35,4 +35,8 @@ export const WorksSection = styled.section`
     .rtl{
         direction:rtl;
     }
+
+    .react-simple-image-viewer__modal{
+        z-index:99;
+    }
 `;
