@@ -5,6 +5,7 @@ import About from './Components/Sections/About/About';
 import Footer from './Components/Footer/Footer';
 import Works from './Components/Sections/Works/Works';
 import { myWorks } from './Content/MyWorks';
+import Contact from './Components/Sections/Contact/Contact';
 function App() {
   return (
     <div className="App 
@@ -28,6 +29,7 @@ function App() {
       <Hero />
       <About />
       <Works InfoList={myWorks.InfoList} />
+      <Contact/>
       <Footer />
     </div>
   );

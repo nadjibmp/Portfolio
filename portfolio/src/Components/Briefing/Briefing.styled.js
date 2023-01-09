@@ -32,7 +32,7 @@ export const BriefSection = styled.main`
         p{
             color:${ColorPalette.White};
             font-family:'poppins', sans-serif;
-            font-weight:300 !imporant;
+            font-weight:300 !important;
         }
 
         #btn__contact
