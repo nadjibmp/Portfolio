@@ -9,7 +9,6 @@
     color: #fff;
     margin-top: 30px;
     padding: 40px 0 10px 0;
-
     .title {
         color: ${ColorPalette.Light};
         font-family: "Open sans", sans-serif;
@@ -48,7 +47,7 @@
         transition: all 0.2s ease-in;
         font-family: "open sans", sans-serif;
         font-size: 16px;
-        margin: 40px 0 0 0;
+        margin: 30px 0 0 0;
         &:hover {
         background-color: rgba(255, 211, 105, 1);
         color: black;

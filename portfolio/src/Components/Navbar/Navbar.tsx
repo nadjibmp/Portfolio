@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { LogoContainer, NavLink, Wrapper, MobileNav } from './Navbar.styled';
 import { Link } from '../../Utils/CommonTypes';
 
@@ -13,10 +13,11 @@ const Navbar: React.FC<Props> = ({ links, logo }) => {
     const handleOpenMenu = (): void => {
         setMenuOpened(!menuOpened);
     }
+    
     return (
         <>
             <Wrapper>
-                <div className='container flex justify-between max-w-full items-center' >
+                <div className='container flex justify-between max-w-full items-center px-8  ' >
                     <LogoContainer className='logo__container'>
                         <a href="/"><img src={logo} alt="brand"></img></a>
                     </LogoContainer>

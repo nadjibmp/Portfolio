@@ -21,5 +21,8 @@ export const TitleWrapper = styled.h2`
         margin-left: 20px;
         width:250px;
         opacity:0.1;
+        @media (max-width: 1281px) {
+            display:none;
+        }   
     }
 `;

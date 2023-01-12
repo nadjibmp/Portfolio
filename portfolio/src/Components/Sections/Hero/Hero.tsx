@@ -6,10 +6,10 @@ import logo from '../../../images/logo.svg';
 
 const Hero: React.FC = () => {
     return (
-        <>
+        <div>
             <Navbar links={NavLinks} logo={logo} />
             <Briefing />
-        </>
+        </div>
 
     )
 }

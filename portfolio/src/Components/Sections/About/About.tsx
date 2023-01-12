@@ -10,7 +10,7 @@ const About: React.FC = () => {
                     <Title number={'01'} title='About Me' />
                 </div>
                 <div className='col-span-12 grid grid-cols-12'>
-                    <div className="col-span-8">
+                    <div className="col-span-12 sm:col-span-12">
                         <article className='my__summary'>
                             Hello! My name is <span>Ahmed Nadjib</span> and I enjoy creating things that live on
                             the internet. My interest in web development started back in 2018 when
@@ -40,7 +40,7 @@ const About: React.FC = () => {
                             </div>
                         </article>
                     </div>
-                    <div className='col-span-4 flex justify-center'>
+                    <div className='col-span-12 sm:col-span-12 flex justify-center'>
                         <div className="pic__container">
                             <div className='overlay'></div>
                             <img src={img} alt="profile_picture" />
